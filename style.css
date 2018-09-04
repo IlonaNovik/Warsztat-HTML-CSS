@@ -1,0 +1,606 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway-regular-webfont.woff2') format('woff2'),
+    url('raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.center {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    text-transform: uppercase;
+    color: white;
+    background: black;
+}
+
+div#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+div#header h3 {
+    padding: 10px;
+    font-weight: bold;
+}
+
+span.highlight {
+    color: #27c7ab;
+    font-weight: bold;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 10px;
+    height: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu ul#o_firmie li {
+    display: block;
+}
+
+ul#o_firmie {
+    position: relative;
+    display: none;
+}
+
+nav ul#menu li.main_menu:hover ul#o_firmie {
+    text-transform: none;
+    display: block;
+    position: absolute;
+    top: 110px;
+    right: 200px;
+    background: black;
+    padding: 10px;
+    margin: 1px;
+}
+
+nav ul#menu li.main_menu:hover ul#o_firmie:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    height: 20px;
+    width: 20px;
+    background: black;
+    transform: rotate(45deg);
+}
+
+section#info {
+    font-family: 'ralewayregular';
+    background: linear-gradient(white, lightgray);
+    height: 500px;
+    width: 100%;
+}
+
+div.container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div#main_picture {
+    width: 530px;
+    height: 300px;
+    margin: 75px 0;
+}
+
+div#main_article {
+    text-align: center;
+    width: 530px;
+    height: 300px;
+    margin: 97px 100px 0 0;
+}
+
+div#main_article h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.submit {
+    margin: 20px;
+    height: 70px;
+    width: 250px;
+    background: #27c7ab;
+    border-radius: 10px;
+    border: 1px solid #27c7ab;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 25px;
+}
+button.swipe {
+    margin: 30px;
+    background: none;
+    border: none;
+    font-size: 80px;
+    color: #27c7ab;
+    font-weight: 200;
+
+}
+
+section#articles {
+    font-family: 'ralewayregular';
+    height: 315px;
+    background: white;
+}
+
+section#articles ul#links img {
+    width: 100%;
+    z-index: 1;
+}
+
+section#articles ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+section#articles ul#links li {
+    position: relative;
+    border: 1px solid lightgray;
+    width: 400px;
+    height: 273px;
+}
+
+div#more_info {
+    width: 163px;
+    height: 100px;
+}
+
+ul#links a:last-child {
+    text-decoration: none;
+    color: black;
+}
+
+section#articles ul#links li:last-child {
+    width: 400px;
+    height: 273px;
+}
+
+section#articles ul#links li:last-child h3 {
+    position: relative;
+    font-weight: bold;
+    padding: 20px;
+}
+
+section#articles ul#links li:last-child h3:after {
+    position: absolute;
+    top: 40px;
+    left: 19px;
+    content: "";
+    width: 150px;
+    height: 10px;
+    background: #27c7ab;
+}
+
+section#articles ul#links li:last-child p {
+    padding: 20px;
+}
+
+p.chair_style {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 2;
+    padding: 20px;
+    font-weight: 700;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+p.chair_style:after {
+    position: absolute;
+    top: 40px;
+    left: 19px;
+    content: "";
+    width: 170px;
+    height: 10px;
+    background: #27c7ab;
+}
+
+section#pricing {
+    font-family: 'ralewayregular';
+    background: whitesmoke;
+    height: 560px;
+    padding: 0 80px 0 80px;
+
+}
+
+section#pricing ul#cennik {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1.naglowek {
+    text-transform: uppercase;
+    padding: 40px;
+    color: gray;
+    position: relative;
+    height: 20px;
+    font-weight: bold;
+}
+ h1:after {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 38px;
+    width: 200px;
+    height: 7px;
+    background: #27c7ab;
+}
+
+section#pricing h1.naglowek {
+    margin: 0 0 20px 143px;
+}
+
+section#pricing li#basic_plan {
+    position: relative;
+    border: 2px solid #e4e4e4;
+    height: 430px;
+    width: 250px;
+    text-align: center;
+    padding-top: 20px;
+    background: #f9f9f9;
+}
+section#pricing li#basic_plan:before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #e4e4e4;
+    background: white;
+    z-index: 1;
+}
+section#pricing li#basic_plan:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 110px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #e4e4e4;
+    z-index: 2;
+    background: #e4e4e4;
+
+}
+
+section#pricing h3 {
+    text-transform: uppercase;
+    color: #24baa0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+section#pricing li#basic_plan div {
+    text-transform: uppercase;
+    border: 2px solid #e4e4e4;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 24px;
+    font-size: 35px;
+    color: darkgray;
+    font-weight: 800;
+    background: white;
+    position: relative;
+}
+
+section#pricing ul#cennik ul#opcje li:first-child {
+    background: #cccccc;
+    padding: 10px;
+    color: #585858;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+section#pricing ul#cennik ul#opcje li:last-child {
+    background: whitesmoke;
+    padding: 10px;
+    color: #585858;
+    font-size: 20px;
+}
+
+span.pln {
+    position: absolute;
+    bottom: 15px;
+    left: 21px;
+    font-size: 12px;
+}
+sup {
+    font-size: 15px;
+    top: -22px;
+}
+
+section#pricing ul#cennik li#basic_plan button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #24baa0;
+    background: #24baa0;
+    border-radius: 10px;
+    color: #f9f9f9;
+    margin: 107px 0 0 0 ;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+section#pricing li#standard_plan {
+    position: relative;
+    border: 2px solid #24baa0;
+    height: 430px;
+    width: 250px;
+    text-align: center;
+    padding-top: 20px;
+    background: #24baa0;
+}
+section#pricing li#standard_plan:before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 10px solid #24baa0;
+    background: white;
+    z-index: 1;
+}
+section#pricing h3.inny_naglowek {
+    color: white;
+}
+
+section#pricing li#standard_plan div {
+    text-transform: uppercase;
+    border: 2px solid #24baa0;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    padding: 24px;
+    font-size: 35px;
+    color: #24baa0;
+    font-weight: 800;
+    background: white;
+    position: relative;
+}
+
+section#pricing ul#cennik li#standard_plan button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #24baa0;
+    background: white;
+    border-radius: 10px;
+    color: #24baa0;
+    margin: 63px;
+    padding: 8px;
+    text-transform: uppercase;
+}
+section#pricing ul#cennik ul#opcje_stndardowe li:nth-child(2n+1) {
+    background: white;
+    padding: 10px;
+    color: #585858;
+    font-size: 20px;
+}
+
+section#pricing ul#cennik ul#opcje_stndardowe li:nth-child(2n+2) {
+    background: whitesmoke;
+    padding: 10px;
+    color: #585858;
+    font-size: 20px;
+}
+
+section#pricing li#advanced_plan {
+    position: relative;
+    border: 2px solid #e4e4e4;
+    height: 430px;
+    width: 250px;
+    text-align: center;
+    padding-top: 20px;
+    background: #f9f9f9;
+}
+
+section#pricing li#advanced_plan:before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #e4e4e4;
+    background: white;
+    z-index: 1;
+}
+
+section#pricing li#advanced_plan:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 110px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #e4e4e4;
+    z-index: 2;
+    background: #e4e4e4;
+}
+
+section#pricing li#advanced_plan div {
+    text-transform: uppercase;
+    border: 2px solid #e4e4e4;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    padding: 24px;
+    font-size: 35px;
+    color: darkgray;
+    font-weight: 800;
+    background: white;
+    position: relative;
+}
+
+section#pricing ul#cennik ul#opcje_zaawansowane li:nth-child(2n+1) {
+    background: #cccccc;
+    padding: 10px;
+    color: #585858;
+    font-size: 20px;
+}
+section#pricing ul#cennik ul#opcje_zaawansowane li:nth-child(2n+2) {
+    background: whitesmoke;
+    padding: 10px;
+    color: #585858;
+    font-size: 20px;
+}
+
+section#pricing ul#cennik li#advanced_plan button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #24baa0;
+    background: #24baa0;
+    border-radius: 10px;
+    color: #f9f9f9;
+    margin: 18px;
+    padding: 8px;
+    text-transform: uppercase;
+}
+section#form {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+form label {
+    display: block;
+    flex-direction: column;
+}
+
+section#form form {
+    font-weight: lighter;
+    margin: 80px 0 0 -180px;
+    padding: 10px;
+    color: lightgray;
+}
+
+section#form input.formularz, textarea.formularz {
+    font-family: 'ralewayregular';
+    resize: none;
+    width: 695px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #24baa0;
+    font-size: 35px;
+}
+
+section#form textarea.formularz {
+    height: 250px;
+}
+
+div#red_chair {
+    font-size: 20px;
+    font-family: 'ralewayregular';
+    margin: 0;
+    padding: 0;
+}
+
+div#red_chair img, label, input {
+    display: block;
+    flex-direction: column;
+}
+
+div#red_chair img {
+    width: 300px;
+    height: 240px;
+    margin: 60px 0 40px 110px;
+    padding: 0;
+    horiz-align: center;
+}
+
+label#checkbox-text {
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+input#checkbox:checked + label:before {
+    background-image: url("images/form_ok.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+input#checkbox {
+    display: none;
+}
+
+label#checkbox-text:before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #24baa0;
+    vertical-align: middle;
+    padding: 5px;
+    margin-right: 8px;
+}
+
+div#red_chair input.submit {
+    padding: 23px 0 0 76px;
+    font-weight: bold;
+    margin-left: 136px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: 150px;
+    padding: 50px 30px 0 45px;
+    color: grey;
+    font-family: 'ralewayregular';
+    font-size: 20px;
+}
+
+li.social {
+    display: inline-block;
+}
+
+ul#social-networks {
+    padding-left: 20px;
+}
+
+footer h3 {
+    text-transform: uppercase;
+}
+
+footer h3 span {
+    font-weight: bold;
+}
+
+footer p {
+    width: 60%;
+}

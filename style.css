@@ -250,7 +250,7 @@ h1.naglowek {
 }
 
 section#pricing h1.naglowek {
-    margin: 0 0 20px 143px;
+    margin: 0 0 20px 0;
 }
 
 section#pricing li#basic_plan {
